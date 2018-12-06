@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/bnt_post"
+
+        android:icon="@drawable/ic_kamera_klik"
+
+
+        android:title="Jual Tanah"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/btn_lokasi"
+
+        android:icon="@drawable/ic_map"
+
+
+        android:title="Terdekat"
+        app:showAsAction="always" />
+
+
+
+</menu>

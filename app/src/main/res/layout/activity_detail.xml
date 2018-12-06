@@ -1,0 +1,254 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.DetailActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/sv"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_launcher_background"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6 Photos"
+                    android:background="#4D000000"
+                    android:layout_gravity="bottom"
+                    android:padding="8dp"
+                    android:id="@+id/tvharga"
+
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/white"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:drawablePadding="4dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    />
+
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Judul"
+                android:id="@+id/txtjudul"
+                android:textSize="32sp"
+                android:layout_margin="16dp"
+                android:layout_marginBottom="8dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Berakhir"
+                android:id="@+id/tvalamat"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deskripsi"
+                android:id="@+id/txtdeskripsi"
+                android:textStyle="bold"
+                android:lineSpacingMultiplier="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="16dp"/>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_vertical_margin">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Relawan"-->
+                        <!--android:layout_marginRight="16dp"-->
+                        <!--/>-->
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="..........."-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:textSize="14sp"-->
+                        <!--android:id="@+id/txtrelawan"-->
+                        <!--android:textStyle="bold"/>-->
+                <!--</TableRow>-->
+
+                <!--<TableRow-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_marginBottom="8dp">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Kota"-->
+                        <!--android:layout_marginRight="16dp"-->
+                        <!--/>-->
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="..............."-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:id="@+id/txtkota"-->
+                        <!--android:textSize="14sp"-->
+                        <!--android:textStyle="bold"/>-->
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp">
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginRight="16dp"-->
+                        <!--android:text="Jenis Pohon" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:text="............."-->
+                        <!--android:id="@+id/txtjenis"-->
+                        <!--android:textSize="14sp"-->
+                        <!--android:textStyle="bold" />-->
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diposting Oleh :"
+                android:textSize="12sp"
+                android:id="@+id/txtowner"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="16dp">
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Kamak"-->
+                    <!--android:id="@+id/txtnm"-->
+
+                    <!--android:layout_centerVertical="true"/>-->
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+    <com.github.clans.fab.FloatingActionMenu
+        android:layout_above="@+id/sv"
+
+        android:id="@+id/fab_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        app:menu_labels_textColor="#000000"
+        app:menu_labels_colorNormal="#FFFFFF"
+        app:menu_labels_colorPressed="#BDBDBD"
+        app:fab_size="normal"
+        app:menu_backgroundColor="@android:color/transparent"
+        app:menu_colorNormal="@color/colorAccent"
+        app:menu_colorPressed="#FF00786D"
+        app:menu_icon="@drawable/ic_menu_white_24dp"
+        app:menu_labels_showShadow="true"
+        app:menu_openDirection="up"
+        app:menu_showShadow="true">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_label="Direct"
+            android:src="@drawable/ic_my_location_white_24dp"
+            app:fab_colorNormal="@color/colorAccent"
+            app:fab_colorPressed="#FF00786D"
+            app:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_label="Chat"
+            android:src="@drawable/ic_chat"
+            app:fab_colorNormal="@color/colorAccent"
+            app:fab_colorPressed="#FF00786D"
+            app:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_label="Call"
+            android:src="@drawable/ic_call"
+            app:fab_colorNormal="@color/colorAccent"
+            app:fab_colorPressed="#FF00786D"
+            app:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/addfav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_label="Tambahkan ke Keranjang"
+            android:src="@drawable/ic_cart"
+            app:fab_colorNormal="@color/colorAccent"
+            app:fab_colorPressed="#FF00786D"
+            app:fab_size="mini" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+
+
+</RelativeLayout>
